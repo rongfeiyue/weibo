@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common" />
+        <module name="dao" />
+        <module name="service" />
+        <module name="web" />
+        <module name="weibo-common" />
+        <module name="weibo-dao" />
+        <module name="weibo-service" />
+        <module name="weibo-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.5" />
+      <module name="dao" target="1.5" />
+      <module name="service" target="1.5" />
+      <module name="web" target="1.5" />
+      <module name="weibo" target="1.5" />
+      <module name="weibo-common" target="1.5" />
+      <module name="weibo-dao" target="1.5" />
+      <module name="weibo-service" target="1.5" />
+      <module name="weibo-web" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

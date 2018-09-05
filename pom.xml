@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.river.vue.weibo</groupId>
+    <artifactId>weibo</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>web</module>
+        <module>service</module>
+        <module>dao</module>
+        <module>common</module>
+    </modules>
+
+    <properties>
+        <springboot.version>1.5.7.RELEASE</springboot.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <tomcat.version>7.0.59</tomcat.version>
+        <start-class>com.river.weibo.WebApplication</start-class>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
+                <version>${springboot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!--配置本地仓库-->
+    <repositories>
+        <repository>
+            <id>private-repo</id>
+            <name>private maven repository</name>
+            <url>http://nexus.creditease.corp/nexus/content/groups/public/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>aliyun-repo</id>
+            <name>aliyun maven repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>get_public</id>
+            <name>Repository for default</name>
+            <url>http://maven.caiwu.corp/nexus/content/groups/public/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>get_snapshots</id>
+            <name>Repository for default</name>
+            <url>http://maven.caiwu.corp/nexus/content/repositories/snapshots/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>get_releases</id>
+            <name>Repository for default</name>
+            <url>http://maven.caiwu.corp/nexus/content/repositories/releases/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>get_thirdparty</id>
+            <name>Repository for default</name>
+            <url>http://maven.caiwu.corp/nexus/content/repositories/thirdparty/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+</project>
