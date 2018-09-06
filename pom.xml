@@ -39,23 +39,6 @@
     <!--配置本地仓库-->
     <repositories>
         <repository>
-            <id>private-repo</id>
-            <name>private maven repository</name>
-            <url>http://nexus.creditease.corp/nexus/content/groups/public/</url>
-            <layout>default</layout>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>fail</checksumPolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>fail</checksumPolicy>
-            </snapshots>
-        </repository>
-
-        <repository>
             <id>aliyun-repo</id>
             <name>aliyun maven repository</name>
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
@@ -70,31 +53,6 @@
                 <updatePolicy>always</updatePolicy>
                 <checksumPolicy>fail</checksumPolicy>
             </snapshots>
-        </repository>
-
-        <repository>
-            <id>get_public</id>
-            <name>Repository for default</name>
-            <url>http://maven.caiwu.corp/nexus/content/groups/public/</url>
-            <layout>default</layout>
-        </repository>
-        <repository>
-            <id>get_snapshots</id>
-            <name>Repository for default</name>
-            <url>http://maven.caiwu.corp/nexus/content/repositories/snapshots/</url>
-            <layout>default</layout>
-        </repository>
-        <repository>
-            <id>get_releases</id>
-            <name>Repository for default</name>
-            <url>http://maven.caiwu.corp/nexus/content/repositories/releases/</url>
-            <layout>default</layout>
-        </repository>
-        <repository>
-            <id>get_thirdparty</id>
-            <name>Repository for default</name>
-            <url>http://maven.caiwu.corp/nexus/content/repositories/thirdparty/</url>
-            <layout>default</layout>
         </repository>
     </repositories>
 </project>
