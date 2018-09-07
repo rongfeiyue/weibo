@@ -5,7 +5,7 @@
 
 <generatorConfiguration>
     <classPathEntry
-            location="/Users/jiecui1/.m2/repository/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar"/>
+            location="D:/maven repository/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar"/>
     <context id="my" targetRuntime="MyBatis3">
         <commentGenerator>
             <property name="suppressDate" value="false"/>
@@ -13,27 +13,27 @@
         </commentGenerator>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://icp-mysql-master-test.caiwu.corp:4392/antman?characterEncoding=utf8"
-                        userId="antman"
-                        password="antman123"/>
-        <javaModelGenerator targetPackage="com.creditease.antman.dao.temp.entity"
-                            targetProject="/Users/jiecui1/projects/antman/dao/src/main/java">
+                        connectionURL="jdbc:mysql://localhost:3306/weibo?characterEncoding=utf8"
+                        userId="root"
+                        password="root"/>
+        <javaModelGenerator targetPackage="com.river.weibo.common.vo"
+                            targetProject="E:/person/projects/vue/weibo/common/src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="com.creditease.antman.dao.temp.xml"
-                         targetProject="/Users/jiecui1/projects/antman/dao/src/main/java">
+        <sqlMapGenerator targetPackage="com.river.weibo.dao"
+                         targetProject="E:/person/projects/vue/weibo/dao/src/main/java">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator targetPackage="com.creditease.antman.dao.temp.mapper"
-                             targetProject="/Users/jiecui1/projects/antman/dao/src/main/java"
+        <javaClientGenerator targetPackage="com.river.weibo.dao.mapper"
+                             targetProject="E:/person/projects/vue/weibo/dao/src/main/java"
                              type="XMLMAPPER">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!-- 企合文件信息 -->
-        <table tableName="t_ec_el_file_info" domainObjectName="FileInfo"
+        <table tableName="t_weibo" domainObjectName="WeiboDTO"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">

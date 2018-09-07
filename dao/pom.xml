@@ -16,6 +16,7 @@
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.1.1</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
@@ -29,6 +30,11 @@
             <scope>compile</scope>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>com.river.vue.weibo</groupId>
+            <artifactId>weibo-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -36,6 +42,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.5.7.RELEASE</version>
             </plugin>
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
@@ -46,7 +53,6 @@
                     <verbose>true</verbose>
                     <overwrite>true</overwrite>
                 </configuration>
-
                 <dependencies>
                     <dependency>
                         <groupId>org.mybatis.generator</groupId>

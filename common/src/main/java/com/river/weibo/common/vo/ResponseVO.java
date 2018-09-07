@@ -1,4 +1,4 @@
-package com.river.weibo.vo;
+package com.river.weibo.common.vo;
 
 public class ResponseVO<T> {
 

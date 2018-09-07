@@ -1,10 +1,12 @@
 package com.river.weibo.controller;
 
+import com.river.weibo.common.vo.PageInfoVO;
+import com.river.weibo.common.vo.ResponseVO;
 import com.river.weibo.service.WeiboService;
-import com.river.weibo.vo.ResponseVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -21,7 +23,7 @@ public class WeiboController {
 
     @GetMapping("/getList")
     @ResponseBody
-    public ResponseVO getList(Integer page) {
+    public ResponseVO getList(PageInfoVO page) {
         return new ResponseVO().buildSuccessResponse(weiboService.getList(page));
     }
 }
