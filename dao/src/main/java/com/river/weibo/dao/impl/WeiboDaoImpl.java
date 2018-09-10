@@ -1,9 +1,9 @@
 package com.river.weibo.dao.impl;
 
 import com.river.weibo.common.vo.PageInfoVO;
-import com.river.weibo.common.vo.WeiboDTO;
+import com.river.weibo.common.vo.Weibo;
 import com.river.weibo.dao.WeiboDao;
-import com.river.weibo.dao.mapper.WeiboDTOMapper;
+import com.river.weibo.dao.mapper.WeiboMapper;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -13,9 +13,9 @@ import java.util.List;
 public class WeiboDaoImpl implements WeiboDao {
 
     @Resource
-    private WeiboDTOMapper weiboDTOMapper;
+    private WeiboMapper weiboMapper;
 
-    public List<WeiboDTO> getList(PageInfoVO page) {
-        return weiboDTOMapper.list(page);
+    public List<Weibo> getList(PageInfoVO page) {
+        return weiboMapper.list(page);
     }
 }

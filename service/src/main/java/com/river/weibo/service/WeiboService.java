@@ -1,7 +1,7 @@
 package com.river.weibo.service;
 
 import com.river.weibo.common.vo.PageInfoVO;
-import com.river.weibo.common.vo.WeiboDTO;
+import com.river.weibo.common.vo.Weibo;
 
 import java.util.List;
 
@@ -12,5 +12,5 @@ public interface WeiboService {
      * @param page
      * @return
      */
-    List<WeiboDTO> getList(PageInfoVO page);
+    List<Weibo> getList(PageInfoVO page);
 }

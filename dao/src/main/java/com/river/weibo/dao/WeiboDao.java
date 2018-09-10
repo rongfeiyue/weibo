@@ -1,11 +1,11 @@
 package com.river.weibo.dao;
 
 import com.river.weibo.common.vo.PageInfoVO;
-import com.river.weibo.common.vo.WeiboDTO;
+import com.river.weibo.common.vo.Weibo;
 
 import java.util.List;
 
 public interface WeiboDao {
 
-    List<WeiboDTO> getList(PageInfoVO page);
+    List<Weibo> getList(PageInfoVO page);
 }

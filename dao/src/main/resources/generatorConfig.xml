@@ -5,7 +5,7 @@
 
 <generatorConfiguration>
     <classPathEntry
-            location="D:/maven repository/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar"/>
+            location="F:/person/m2/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar"/>
     <context id="my" targetRuntime="MyBatis3">
         <commentGenerator>
             <property name="suppressDate" value="false"/>
@@ -17,23 +17,23 @@
                         userId="root"
                         password="root"/>
         <javaModelGenerator targetPackage="com.river.weibo.common.vo"
-                            targetProject="E:/person/projects/vue/weibo/common/src/main/java">
+                            targetProject="F:/projects/vue/weibo/common/src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <sqlMapGenerator targetPackage="com.river.weibo.dao"
-                         targetProject="E:/person/projects/vue/weibo/dao/src/main/java">
+                         targetProject="F:/projects/vue/weibo/dao/src/main/java">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
         <javaClientGenerator targetPackage="com.river.weibo.dao.mapper"
-                             targetProject="E:/person/projects/vue/weibo/dao/src/main/java"
+                             targetProject="F:/projects/vue/weibo/dao/src/main/java"
                              type="XMLMAPPER">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!-- 企合文件信息 -->
-        <table tableName="t_weibo" domainObjectName="WeiboDTO"
+        <table tableName="t_weibo" domainObjectName="Weibo"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">

@@ -1,4 +1,4 @@
-package com.river.weibo.dao;
+package com.river.weibo.dao.config;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
