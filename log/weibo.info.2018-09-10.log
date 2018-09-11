@@ -72,3 +72,1046 @@
 2018-09-10 21:27:37.807 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
 2018-09-10 21:27:37.831 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
 2018-09-10 21:27:37.845 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-10 21:29:36.306 [http-nio-8088-exec-3] DEBUG com.river.weibo.controller.WeiboController - debug msg
+2018-09-10 21:29:36.306 [http-nio-8088-exec-3] INFO  com.river.weibo.controller.WeiboController - info msg
+2018-09-10 21:29:36.307 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-10 21:29:36.308 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 10(Integer), 20(Integer)
+2018-09-10 21:29:36.309 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 0
+2018-09-10 21:30:31.975 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 14988 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 21:30:31.997 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 21:30:31.998 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 21:30:32.376 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 21:30:32.556 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 21:30:32 CST 2018]; root of context hierarchy
+2018-09-10 21:30:35.084 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 21:30:35.100 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 21:30:35.101 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 21:30:35.261 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 21:30:35.261 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2705 ms
+2018-09-10 21:30:35.557 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 21:30:35.566 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 21:30:35.567 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 21:30:35.568 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 21:30:35.568 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 21:30:36.908 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 21:30:32 CST 2018]; root of context hierarchy
+2018-09-10 21:30:37.046 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 21:30:37.051 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 21:30:37.056 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 21:30:37.057 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 21:30:37.140 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:30:37.140 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:30:37.222 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:30:38.395 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 21:30:38.428 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:30:38.447 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:30:38.470 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 21:30:38.503 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 21:30:38.511 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.825 seconds (JVM running for 9.402)
+2018-09-10 21:30:44.119 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 21:30:44.119 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 21:30:44.148 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-09-10 21:30:44.191 [http-nio-8088-exec-2] DEBUG com.river.weibo.controller.WeiboController - debug msg
+2018-09-10 21:30:44.191 [http-nio-8088-exec-2] INFO  com.river.weibo.controller.WeiboController - info msg
+2018-09-10 21:30:44.554 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-10 21:30:44.578 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 11(Integer), 20(Integer)
+2018-09-10 21:30:44.589 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 0
+2018-09-10 21:31:05.038 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 11828 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 21:31:05.046 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 21:31:05.047 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 21:31:05.447 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 21:31:05.605 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 21:31:05 CST 2018]; root of context hierarchy
+2018-09-10 21:31:07.802 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 21:31:07.820 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 21:31:07.822 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 21:31:08.030 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 21:31:08.031 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2427 ms
+2018-09-10 21:31:08.319 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 21:31:08.328 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 21:31:08.329 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 21:31:08.329 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 21:31:08.329 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 21:31:09.756 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 21:31:05 CST 2018]; root of context hierarchy
+2018-09-10 21:31:09.871 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 21:31:09.872 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 21:31:09.876 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 21:31:09.878 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 21:31:09.946 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:31:09.946 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:31:10.028 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:31:11.261 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 21:31:11.290 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:31:11.311 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:31:11.383 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 21:31:11.414 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 21:31:11.421 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.62 seconds (JVM running for 9.262)
+2018-09-10 21:31:14.978 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 21:31:14.978 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 21:31:15.011 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-09-10 21:31:15.064 [http-nio-8088-exec-2] DEBUG com.river.weibo.controller.WeiboController - debug msg
+2018-09-10 21:31:15.064 [http-nio-8088-exec-2] INFO  com.river.weibo.controller.WeiboController - info msg
+2018-09-10 21:31:15.482 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-10 21:31:15.505 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 11(Integer), 20(Integer)
+2018-09-10 21:31:15.516 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 0
+2018-09-10 21:32:44.420 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 14300 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 21:32:44.428 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 21:32:44.428 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 21:32:44.771 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 21:32:44.876 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 21:32:44 CST 2018]; root of context hierarchy
+2018-09-10 21:32:47.036 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 21:32:47.053 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 21:32:47.054 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 21:32:47.210 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 21:32:47.210 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2334 ms
+2018-09-10 21:32:47.489 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 21:32:47.497 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 21:32:47.498 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 21:32:47.499 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 21:32:47.499 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 21:32:48.886 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 21:32:44 CST 2018]; root of context hierarchy
+2018-09-10 21:32:49.013 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 21:32:49.014 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 21:32:49.018 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 21:32:49.019 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 21:32:49.087 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:32:49.088 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:32:49.171 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:32:50.277 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 21:32:50.304 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:32:50.322 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:32:50.344 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 21:32:50.373 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 21:32:50.380 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.868 seconds (JVM running for 9.465)
+2018-09-10 21:32:55.766 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 21:32:55.766 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 21:32:55.795 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-09-10 21:32:55.840 [http-nio-8088-exec-2] DEBUG com.river.weibo.controller.WeiboController - debug msg
+2018-09-10 21:32:55.840 [http-nio-8088-exec-2] INFO  com.river.weibo.controller.WeiboController - info msg
+2018-09-10 21:41:20.919 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 19448 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 21:41:20.932 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 21:41:20.933 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 21:41:21.378 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 21:41:21.479 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e8b7643: startup date [Mon Sep 10 21:41:21 CST 2018]; root of context hierarchy
+2018-09-10 21:41:23.822 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 21:41:23.841 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 21:41:23.843 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 21:41:24.009 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 21:41:24.010 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2531 ms
+2018-09-10 21:41:24.298 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 21:41:24.307 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 21:41:24.308 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 21:41:24.308 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 21:41:24.308 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 21:41:25.538 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e8b7643: startup date [Mon Sep 10 21:41:21 CST 2018]; root of context hierarchy
+2018-09-10 21:41:25.643 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 21:41:25.647 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 21:41:25.650 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 21:41:25.651 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 21:41:25.716 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:41:25.716 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:41:25.750 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 21:41:25.800 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:41:26.914 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 21:41:26.940 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:41:26.958 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:41:26.980 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 21:41:27.010 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 21:41:27.173 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.557 seconds (JVM running for 9.517)
+2018-09-10 21:41:38.546 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 21:41:38.547 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 21:41:38.576 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-09-10 21:43:18.698 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 14684 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 21:43:18.705 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 21:43:18.706 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 21:43:19.108 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 21:43:19.195 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50de186c: startup date [Mon Sep 10 21:43:19 CST 2018]; root of context hierarchy
+2018-09-10 21:43:21.455 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 21:43:21.471 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 21:43:21.472 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 21:43:21.633 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 21:43:21.633 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2438 ms
+2018-09-10 21:43:21.900 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 21:43:21.911 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 21:43:21.912 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 21:43:21.912 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 21:43:21.912 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 21:43:23.238 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50de186c: startup date [Mon Sep 10 21:43:19 CST 2018]; root of context hierarchy
+2018-09-10 21:43:23.377 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 21:43:23.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 21:43:23.385 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 21:43:23.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 21:43:23.475 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:43:23.476 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:43:23.521 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 21:43:23.580 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:43:24.760 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 21:43:24.790 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:43:24.813 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:43:24.840 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 21:43:24.871 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 21:43:25.003 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.623 seconds (JVM running for 9.447)
+2018-09-10 21:43:41.753 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 16704 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 21:43:41.760 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 21:43:41.761 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 21:43:42.194 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 21:43:42.319 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 21:43:42 CST 2018]; root of context hierarchy
+2018-09-10 21:43:44.456 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 21:43:44.473 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 21:43:44.475 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 21:43:44.629 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 21:43:44.629 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2310 ms
+2018-09-10 21:43:44.943 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 21:43:44.952 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 21:43:44.954 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 21:43:44.954 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 21:43:44.954 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 21:43:46.204 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 21:43:42 CST 2018]; root of context hierarchy
+2018-09-10 21:43:46.302 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 21:43:46.305 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 21:43:46.309 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 21:43:46.310 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 21:43:46.373 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:43:46.373 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:43:46.405 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 21:43:46.460 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:43:47.545 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 21:43:47.573 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:43:47.591 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:43:47.613 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 21:43:47.642 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 21:43:47.649 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.188 seconds (JVM running for 8.794)
+2018-09-10 21:44:06.702 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 21:44:06.703 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 21:44:06.733 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2018-09-10 21:44:06.790 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 21:44:06.851 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 21:44:06.851 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 21:44:06.852 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 21:44:06.852 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 21:44:06.857 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 21:44:06.857 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 21:44:35.705 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 16108 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 21:44:35.726 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 21:44:35.726 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 21:44:36.082 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 21:44:36.228 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42530531: startup date [Mon Sep 10 21:44:36 CST 2018]; root of context hierarchy
+2018-09-10 21:44:38.336 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 21:44:38.351 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 21:44:38.352 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 21:44:38.523 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 21:44:38.523 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2295 ms
+2018-09-10 21:44:38.831 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 21:44:38.839 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 21:44:38.840 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 21:44:38.840 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 21:44:38.841 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 21:44:40.225 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42530531: startup date [Mon Sep 10 21:44:36 CST 2018]; root of context hierarchy
+2018-09-10 21:44:40.323 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 21:44:40.327 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 21:44:40.331 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 21:44:40.331 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 21:44:40.395 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:44:40.395 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:44:40.428 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 21:44:40.476 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:44:41.701 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 21:44:41.730 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:44:41.748 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:44:41.770 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 21:44:41.976 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 21:44:41.983 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.575 seconds (JVM running for 9.243)
+2018-09-10 21:44:45.584 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 21:44:45.585 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 21:44:45.614 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-09-10 21:44:45.669 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 21:44:45.723 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 21:44:45.723 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 21:44:45.723 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 21:44:45.723 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 21:44:45.728 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 21:44:45.728 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 21:45:31.566 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 4900 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 21:45:31.575 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 21:45:31.575 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 21:45:31.949 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 21:45:32.133 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 21:45:32 CST 2018]; root of context hierarchy
+2018-09-10 21:45:34.254 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 21:45:34.275 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 21:45:34.276 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 21:45:34.442 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/weibo] - Initializing Spring embedded WebApplicationContext
+2018-09-10 21:45:34.443 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2310 ms
+2018-09-10 21:45:34.754 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 21:45:34.772 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 21:45:34.774 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 21:45:34.775 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 21:45:34.775 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 21:45:36.650 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 21:45:32 CST 2018]; root of context hierarchy
+2018-09-10 21:45:36.800 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 21:45:36.804 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 21:45:36.809 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 21:45:36.810 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 21:45:36.914 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:45:36.915 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:45:36.962 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 21:45:37.041 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:45:38.292 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 21:45:38.323 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:45:38.342 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:45:38.367 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 21:45:38.642 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 21:45:38.649 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 8.422 seconds (JVM running for 10.038)
+2018-09-10 21:45:44.529 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/weibo] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 21:45:44.529 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 21:45:44.558 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-09-10 21:45:48.213 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 21:45:48.302 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 21:45:48.303 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 21:45:48.303 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 21:45:48.303 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 21:45:48.309 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 21:45:48.309 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 21:46:22.055 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 2952 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 21:46:22.064 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 21:46:22.065 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 21:46:22.506 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 21:46:22.581 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ceb3185: startup date [Mon Sep 10 21:46:22 CST 2018]; root of context hierarchy
+2018-09-10 21:46:24.757 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 21:46:24.772 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 21:46:24.774 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 21:46:24.941 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/weibo] - Initializing Spring embedded WebApplicationContext
+2018-09-10 21:46:24.942 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2362 ms
+2018-09-10 21:46:25.206 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 21:46:25.215 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 21:46:25.216 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 21:46:25.216 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 21:46:25.216 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 21:46:26.647 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ceb3185: startup date [Mon Sep 10 21:46:22 CST 2018]; root of context hierarchy
+2018-09-10 21:46:26.742 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 21:46:26.745 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 21:46:26.749 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 21:46:26.749 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 21:46:26.814 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:46:26.814 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:46:26.848 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 21:46:26.907 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:46:27.996 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 21:46:28.024 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:46:28.043 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:46:28.066 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 21:46:28.099 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 21:46:28.106 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.438 seconds (JVM running for 9.275)
+2018-09-10 21:46:32.529 [http-nio-8088-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/weibo] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 21:46:32.529 [http-nio-8088-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 21:46:32.563 [http-nio-8088-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2018-09-10 21:46:32.629 [http-nio-8088-exec-3] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 21:46:32.695 [http-nio-8088-exec-3] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 21:46:32.696 [http-nio-8088-exec-3] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 21:46:32.696 [http-nio-8088-exec-3] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 21:46:32.696 [http-nio-8088-exec-3] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 21:46:32.703 [http-nio-8088-exec-3] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 21:46:32.703 [http-nio-8088-exec-3] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 21:46:49.071 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 19184 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 21:46:49.077 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 21:46:49.078 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 21:46:49.697 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 21:46:49.759 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@291f18: startup date [Mon Sep 10 21:46:49 CST 2018]; root of context hierarchy
+2018-09-10 21:46:52.665 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 21:46:52.682 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 21:46:52.683 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 21:46:52.843 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 21:46:52.844 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3085 ms
+2018-09-10 21:46:53.119 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 21:46:53.128 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 21:46:53.129 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 21:46:53.129 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 21:46:53.130 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 21:46:54.346 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@291f18: startup date [Mon Sep 10 21:46:49 CST 2018]; root of context hierarchy
+2018-09-10 21:46:54.449 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 21:46:54.450 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 21:46:54.453 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 21:46:54.454 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 21:46:54.518 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:46:54.518 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:46:54.549 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 21:46:54.597 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:46:55.686 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 21:46:55.715 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:46:55.734 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:46:55.756 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 21:46:55.783 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 21:46:55.904 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 8.135 seconds (JVM running for 9.595)
+2018-09-10 21:47:04.744 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 21:47:04.744 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 21:47:04.773 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-09-10 21:47:04.828 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 21:47:04.882 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 21:47:04.882 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 21:47:04.882 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 21:47:04.883 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 21:47:04.888 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 21:47:04.889 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 21:48:45.548 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 16588 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 21:48:45.556 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 21:48:45.556 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 21:48:45.916 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 21:48:46.064 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25f4878b: startup date [Mon Sep 10 21:48:46 CST 2018]; root of context hierarchy
+2018-09-10 21:48:48.733 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 21:48:48.748 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 21:48:48.750 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 21:48:48.919 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 21:48:48.919 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2855 ms
+2018-09-10 21:48:49.196 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 21:48:49.204 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 21:48:49.205 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 21:48:49.206 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 21:48:49.206 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 21:48:50.421 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25f4878b: startup date [Mon Sep 10 21:48:46 CST 2018]; root of context hierarchy
+2018-09-10 21:48:50.524 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 21:48:50.527 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 21:48:50.531 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 21:48:50.531 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 21:48:50.612 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:48:50.612 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:48:50.689 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 21:48:50.750 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:48:51.884 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 21:48:51.916 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:48:51.934 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:48:51.956 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 21:48:51.991 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 21:48:51.999 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.949 seconds (JVM running for 9.756)
+2018-09-10 21:48:57.672 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 21:48:57.672 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 21:48:57.702 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2018-09-10 21:48:59.876 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 21:48:59.933 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 21:48:59.933 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 21:48:59.933 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 21:48:59.933 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 21:48:59.938 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 21:48:59.939 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 21:50:01.786 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 19452 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 21:50:01.794 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 21:50:01.795 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 21:50:02.202 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 21:50:02.320 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 21:50:02 CST 2018]; root of context hierarchy
+2018-09-10 21:50:04.525 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 21:50:04.539 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 21:50:04.541 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 21:50:04.698 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 21:50:04.698 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2379 ms
+2018-09-10 21:50:04.964 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 21:50:04.973 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 21:50:04.974 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 21:50:04.975 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 21:50:04.975 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 21:50:06.354 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 21:50:02 CST 2018]; root of context hierarchy
+2018-09-10 21:50:06.457 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 21:50:06.459 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 21:50:06.462 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 21:50:06.462 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 21:50:06.528 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:50:06.528 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:50:06.560 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 21:50:06.612 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:50:07.678 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 21:50:07.706 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:50:07.723 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:50:07.744 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 21:50:07.772 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 21:50:07.779 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.354 seconds (JVM running for 8.864)
+2018-09-10 21:50:10.723 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 21:50:10.724 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 21:50:10.753 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-09-10 21:50:10.809 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 21:50:10.862 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 21:50:10.863 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 21:50:10.863 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 21:50:10.863 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 21:50:10.867 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 21:50:10.867 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 21:51:17.861 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 12576 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 21:51:17.933 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 21:51:17.934 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 21:51:18.303 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 21:51:18.513 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@466276d8: startup date [Mon Sep 10 21:51:18 CST 2018]; root of context hierarchy
+2018-09-10 21:51:20.679 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 21:51:20.694 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 21:51:20.695 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 21:51:20.861 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 21:51:20.862 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2349 ms
+2018-09-10 21:51:21.180 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 21:51:21.190 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 21:51:21.191 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 21:51:21.191 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 21:51:21.191 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 21:51:22.457 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@466276d8: startup date [Mon Sep 10 21:51:18 CST 2018]; root of context hierarchy
+2018-09-10 21:51:22.553 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 21:51:22.557 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 21:51:22.560 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 21:51:22.561 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 21:51:22.630 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:51:22.630 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:51:22.662 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 21:51:22.718 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:51:23.821 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 21:51:23.849 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:51:23.867 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:51:23.890 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 21:51:24.116 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 21:51:24.125 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.603 seconds (JVM running for 9.157)
+2018-09-10 21:52:31.596 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 21:52:31.597 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 21:52:31.632 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2018-09-10 21:52:31.703 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 21:52:31.762 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 21:52:31.763 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 21:52:31.763 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 21:52:31.763 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 21:52:31.769 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 21:52:31.770 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 21:53:00.132 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 7288 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 21:53:00.140 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 21:53:00.141 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 21:53:00.579 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 21:53:00.668 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bc407fd: startup date [Mon Sep 10 21:53:00 CST 2018]; root of context hierarchy
+2018-09-10 21:53:02.818 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 21:53:02.832 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 21:53:02.833 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 21:53:02.992 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 21:53:02.993 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2325 ms
+2018-09-10 21:53:03.266 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 21:53:03.275 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 21:53:03.277 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 21:53:03.277 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 21:53:03.277 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 21:53:04.500 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bc407fd: startup date [Mon Sep 10 21:53:00 CST 2018]; root of context hierarchy
+2018-09-10 21:53:04.604 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 21:53:04.608 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 21:53:04.611 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 21:53:04.612 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 21:53:04.681 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:53:04.681 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:53:04.718 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 21:53:04.768 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 21:53:05.844 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 21:53:05.872 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:53:05.889 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 21:53:05.913 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 21:53:05.941 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 21:53:05.948 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.125 seconds (JVM running for 8.666)
+2018-09-10 22:00:19.373 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 22:00:19.374 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 22:00:19.405 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2018-09-10 22:00:19.464 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 22:00:19.516 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 22:00:19.517 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 22:00:19.517 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 22:00:19.517 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 22:00:19.522 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 22:00:19.522 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 22:00:41.285 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 17696 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 22:00:41.292 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 22:00:41.293 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 22:00:41.771 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 22:00:41.872 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49964d75: startup date [Mon Sep 10 22:00:41 CST 2018]; root of context hierarchy
+2018-09-10 22:00:44.168 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 22:00:44.183 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 22:00:44.184 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 22:00:44.346 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 22:00:44.346 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2474 ms
+2018-09-10 22:00:44.609 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 22:00:44.618 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 22:00:44.619 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 22:00:44.620 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 22:00:44.620 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 22:00:45.823 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49964d75: startup date [Mon Sep 10 22:00:41 CST 2018]; root of context hierarchy
+2018-09-10 22:00:45.929 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 22:00:45.933 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 22:00:45.936 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 22:00:45.936 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 22:00:46.000 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:00:46.000 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:00:46.031 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 22:00:46.083 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:00:47.178 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 22:00:47.206 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 22:00:47.225 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 22:00:47.247 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 22:00:47.275 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 22:00:47.426 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.421 seconds (JVM running for 8.985)
+2018-09-10 22:01:14.377 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 22:01:14.378 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 22:01:14.407 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-09-10 22:01:14.465 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 22:01:14.517 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 22:01:14.517 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 22:01:14.517 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 22:01:14.517 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 22:01:14.523 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 22:01:14.523 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 22:03:09.482 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 18616 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 22:03:09.492 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 22:03:09.493 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 22:03:09.834 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 22:03:09.933 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60b4beb4: startup date [Mon Sep 10 22:03:09 CST 2018]; root of context hierarchy
+2018-09-10 22:03:12.377 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 22:03:12.393 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 22:03:12.394 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 22:03:12.552 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 22:03:12.553 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2620 ms
+2018-09-10 22:03:12.855 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 22:03:12.865 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 22:03:12.866 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 22:03:12.867 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 22:03:12.867 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 22:03:14.144 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60b4beb4: startup date [Mon Sep 10 22:03:09 CST 2018]; root of context hierarchy
+2018-09-10 22:03:14.244 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 22:03:14.247 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 22:03:14.250 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 22:03:14.251 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 22:03:14.318 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:03:14.318 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:03:14.351 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 22:03:14.408 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:03:15.480 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 22:03:15.508 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 22:03:15.527 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 22:03:15.549 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 22:03:15.759 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 22:03:15.765 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.859 seconds (JVM running for 9.549)
+2018-09-10 22:03:41.381 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 22:03:41.381 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 22:03:41.410 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-09-10 22:03:41.467 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 22:03:41.518 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 22:03:41.518 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 22:03:41.518 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 22:03:41.519 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 22:03:41.523 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 22:03:41.524 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 22:04:39.511 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 17204 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 22:04:39.518 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 22:04:39.518 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 22:04:39.921 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 22:04:39.982 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 22:04:39 CST 2018]; root of context hierarchy
+2018-09-10 22:04:42.535 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 22:04:42.553 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 22:04:42.555 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 22:04:42.719 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 22:04:42.720 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2738 ms
+2018-09-10 22:04:42.979 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 22:04:42.989 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 22:04:42.990 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 22:04:42.990 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 22:04:42.990 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 22:04:44.295 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 22:04:39 CST 2018]; root of context hierarchy
+2018-09-10 22:04:44.465 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 22:04:44.466 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 22:04:44.470 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 22:04:44.471 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 22:04:44.547 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:04:44.547 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:04:44.578 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 22:04:44.624 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:04:45.829 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 22:04:45.861 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 22:04:45.884 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 22:04:45.914 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 22:04:46.132 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 22:04:46.140 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 8.271 seconds (JVM running for 9.803)
+2018-09-10 22:04:49.942 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 22:04:49.942 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 22:04:49.970 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-09-10 22:04:50.026 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 22:04:50.078 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 22:04:50.078 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 22:04:50.078 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 22:04:50.079 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 22:04:50.083 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 22:04:50.083 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 22:04:50.840 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-10 22:04:50.863 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 1(Integer), 10(Integer)
+2018-09-10 22:04:50.875 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 0
+2018-09-10 22:05:47.373 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 18500 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 22:05:47.380 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 22:05:47.381 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 22:05:47.726 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 22:05:47.861 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 22:05:47 CST 2018]; root of context hierarchy
+2018-09-10 22:05:49.996 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 22:05:50.011 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 22:05:50.012 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 22:05:50.231 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 22:05:50.231 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2371 ms
+2018-09-10 22:05:50.515 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 22:05:50.524 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 22:05:50.525 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 22:05:50.525 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 22:05:50.525 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 22:05:51.745 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 22:05:47 CST 2018]; root of context hierarchy
+2018-09-10 22:05:51.848 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 22:05:51.849 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 22:05:51.853 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 22:05:51.854 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 22:05:51.923 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:05:51.924 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:05:51.990 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 22:05:52.057 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:05:53.313 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 22:05:53.345 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 22:05:53.365 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 22:05:53.389 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 22:05:53.605 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 22:05:53.619 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.684 seconds (JVM running for 9.226)
+2018-09-10 22:05:56.359 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 22:05:56.359 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 22:05:56.388 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-09-10 22:05:56.444 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 22:05:56.496 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 22:05:56.496 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 22:05:56.496 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 22:05:56.497 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 22:05:56.502 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 22:05:56.502 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 22:05:57.208 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-10 22:05:57.232 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 1(Integer), 10(Integer)
+2018-09-10 22:05:57.244 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 0
+2018-09-10 22:06:28.071 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 6592 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 22:06:28.078 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 22:06:28.079 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 22:06:28.474 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 22:06:28.576 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 22:06:28 CST 2018]; root of context hierarchy
+2018-09-10 22:06:30.685 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 22:06:30.699 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 22:06:30.701 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 22:06:30.858 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 22:06:30.859 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2283 ms
+2018-09-10 22:06:31.123 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 22:06:31.132 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 22:06:31.133 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 22:06:31.133 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 22:06:31.134 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 22:06:32.435 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d62fe5b: startup date [Mon Sep 10 22:06:28 CST 2018]; root of context hierarchy
+2018-09-10 22:06:32.539 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 22:06:32.541 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 22:06:32.544 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 22:06:32.545 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 22:06:32.629 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:06:32.629 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:06:32.682 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 22:06:32.730 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:06:33.831 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 22:06:33.859 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 22:06:33.878 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 22:06:33.902 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 22:06:34.119 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 22:06:34.128 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 7.514 seconds (JVM running for 9.121)
+2018-09-10 22:06:52.623 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 22:06:52.624 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 22:06:52.654 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2018-09-10 22:06:52.710 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 22:06:52.766 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 22:06:52.766 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 22:06:52.766 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 22:06:52.767 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 22:06:52.772 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 22:06:52.772 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 22:06:53.477 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-10 22:06:53.503 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 1(Integer), 10(Integer)
+2018-09-10 22:06:53.515 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 0
+2018-09-10 22:07:56.633 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on DESKTOP-9876C49 with PID 14440 (F:\projects\vue\weibo\web\target\classes started by River in F:\projects\vue\weibo)
+2018-09-10 22:07:56.642 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-10 22:07:56.644 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-10 22:07:57.195 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-10 22:07:57.340 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50de186c: startup date [Mon Sep 10 22:07:57 CST 2018]; root of context hierarchy
+2018-09-10 22:08:00.034 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-10 22:08:00.049 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-10 22:08:00.050 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-10 22:08:00.314 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-10 22:08:00.315 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2976 ms
+2018-09-10 22:08:00.702 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-10 22:08:00.716 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-10 22:08:00.718 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-10 22:08:00.719 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-10 22:08:00.719 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-10 22:08:02.172 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50de186c: startup date [Mon Sep 10 22:07:57 CST 2018]; root of context hierarchy
+2018-09-10 22:08:02.279 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-10 22:08:02.283 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-10 22:08:02.285 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-10 22:08:02.286 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-10 22:08:02.352 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:08:02.352 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:08:02.385 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-10 22:08:02.433 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-10 22:08:03.654 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-10 22:08:03.684 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-10 22:08:03.702 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-10 22:08:03.726 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-10 22:08:04.095 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-10 22:08:04.124 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 9.039 seconds (JVM running for 10.85)
+2018-09-10 22:08:08.893 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-10 22:08:08.894 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-10 22:08:08.929 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2018-09-10 22:08:08.998 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-10 22:08:09.064 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-10 22:08:09.064 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-10 22:08:09.064 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-10 22:08:09.065 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-10 22:08:09.070 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-10 22:08:09.070 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-10 22:08:09.894 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-10 22:08:09.920 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-10 22:08:09.942 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1

@@ -5,9 +5,6 @@ public class PageInfoVO {
     private Integer page;
     private Integer rows;
 
-    private Integer startRows;
-    private Integer endRows;
-
     public void setPage(Integer page) {
         this.page = page;
     }

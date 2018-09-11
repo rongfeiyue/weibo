@@ -19,9 +19,9 @@ $(function () {
                 
             },
             getList: function (page) {
-                var data = Vue.$http('weibo/getList', {page: page});
-                eval(data).forEach(function (value) {
-                    alert(value)
+                this.$http.get('/weibo/getList', {page: page, rows:10}).then(function (res) {
+                    var data = res.data;
+                    console.log(data)
                 })
             }
         },
@@ -29,9 +29,4 @@ $(function () {
             this.getList(1);
         }
     });
-    Vue.prototype.$http_get=function (url, params) {
-        $http.get(url, params).then(function (res) { 
-            return res.data;
-        })
-    }
 });
