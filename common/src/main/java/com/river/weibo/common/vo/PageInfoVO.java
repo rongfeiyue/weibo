@@ -25,7 +25,4 @@ public class PageInfoVO {
         return this.rows*(this.page-1);
     }
 
-    public Integer getEndRows() {
-        return this.rows*this.page;
-    }
 }

@@ -1,6 +1,8 @@
 package com.river.weibo.service;
 
+import com.river.weibo.common.enums.OperateEnum;
 import com.river.weibo.common.vo.PageInfoVO;
+import com.river.weibo.common.vo.ResponseVO;
 import com.river.weibo.common.vo.Weibo;
 
 import java.util.List;
@@ -12,5 +14,10 @@ public interface WeiboService {
      * @param page
      * @return
      */
-    List<Weibo> getList(PageInfoVO page);
+    ResponseVO<List<Weibo>> queryForList(PageInfoVO page);
+
+
+    Integer operate(OperateEnum operate, Integer id);
+
+    void add(String content);
 }

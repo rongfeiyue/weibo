@@ -15,7 +15,19 @@
     <select id="list" resultType="com.river.weibo.common.vo.Weibo" parameterType="com.river.weibo.common.vo.PageInfoVO">
         select
         <include refid="Base_Column_List"></include>
-        FROM t_weibo ORDER BY id desc limit #{startRows},#{endRows}
+        FROM t_weibo
+        WHERE deleted=0
+        ORDER BY id desc limit #{startRows},#{rows}
+    </select>
+    <select id="count" resultType="java.lang.Integer">
+        select count(1) from t_weibo where deleted=0
+    </select>
+    <select id="selectByPrimaryKey" resultType="com.river.weibo.common.vo.Weibo"
+            parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List"></include>
+        FROM t_weibo
+        WHERE id = #{id,jdbcType=INTEGER}
     </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
         delete from t_weibo
@@ -57,9 +69,6 @@
             </if>
             <if test="ref != null">
                 ref = #{ref,jdbcType=INTEGER},
-            </if>
-            <if test="time != null">
-                time = #{time,jdbcType=TIMESTAMP},
             </if>
             <if test="deleted != null">
                 deleted = #{deleted,jdbcType=TINYINT},

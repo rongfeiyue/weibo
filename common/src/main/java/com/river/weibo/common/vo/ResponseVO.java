@@ -2,9 +2,9 @@ package com.river.weibo.common.vo;
 
 public class ResponseVO<T> {
 
-    public static final int CODE_SUCCESS = 200;
-    public static final int CODE_FAILURE = 500;
-    public static final int CODE_PARAM_ERROR = 400;
+    public static final Integer CODE_SUCCESS = 200;
+    public static final Integer CODE_FAILURE = 500;
+    public static final Integer CODE_PARAM_ERROR = 400;
 
     public static final String MSG_SUCCESS = "Interface request is successful!";
     public static final String MSG_FAILURE = "The program processing error!";
@@ -15,7 +15,7 @@ public class ResponseVO<T> {
     /**
      * 响应相应码
      */
-    private int code;
+    private Integer code;
     /**
      * 响应相应信息
      */
@@ -25,47 +25,50 @@ public class ResponseVO<T> {
      */
     private T data;
 
-    private Integer total ;
+    private Integer total;
 
-    public ResponseVO buildSuccessResponse(){
+    public ResponseVO buildSuccessResponse() {
         this.setCode(CODE_SUCCESS);
         this.setMessage(MSG_SUCCESS);
         return this;
     }
-    public ResponseVO buildSuccessResponse(T data){
+
+    public ResponseVO buildSuccessResponse(T data) {
         this.setCode(CODE_SUCCESS);
         this.setMessage(MSG_SUCCESS);
         this.setData(data);
         return this;
     }
-    public ResponseVO buildFailureResponse(){
+
+    public ResponseVO buildFailureResponse() {
         this.setCode(CODE_FAILURE);
         this.setMessage(MSG_FAILURE);
         return this;
     }
-    public ResponseVO buildFailureResponse(String msg){
+
+    public ResponseVO buildFailureResponse(String msg) {
         this.setCode(CODE_FAILURE);
         this.setMessage(msg);
         return this;
     }
 
-    public ResponseVO buildParamErrorResponse(){
+    public ResponseVO buildParamErrorResponse() {
         this.setCode(CODE_PARAM_ERROR);
         this.setMessage(MSG_PARAM_ERROR);
         return this;
     }
 
-    public ResponseVO buildErrorResponse(String message){
+    public ResponseVO buildErrorResponse(String message) {
         this.setCode(CODE_PARAM_ERROR);
         this.setMessage(message);
         return this;
     }
 
-    public int getCode() {
+    public Integer getCode() {
         return code;
     }
 
-    public void setCode(int code) {
+    public void setCode(Integer code) {
         this.code = code;
     }
 

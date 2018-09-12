@@ -62,4 +62,11 @@ public class Weibo {
     public void setDeleted(Byte deleted) {
         this.deleted = deleted;
     }
+
+    public Weibo() {
+    }
+
+    public Weibo(String content) {
+        this.content = content;
+    }
 }

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>weibo</title>
-    <link rel="stylesheet" href="style/weibo.css">
+    <title>weibo ${version}</title>
+    <link rel="stylesheet" href="/style/weibo.css">
     <script src="/js/lib/jquery-1.7.1.js"></script>
     <script src="/js/lib/vue.js"></script>
     <script src="/js/lib/vue-resource.js"></script>
@@ -13,9 +13,9 @@
 <div class="znsArea">
     <!--留言-->
     <div class="takeComment">
-        <textarea name="textarea" class="takeTextField" id="tijiaoText" v-model="t1"></textarea>
+        <textarea name="textarea" class="takeTextField" v-model="content" @keydown.enter.prevent="add"></textarea>
         <div class="takeSbmComment">
-            <input type="button" class="inputs" value="" @click="add"/>
+            <input type="button" class="inputs" @click="add"/>
             <span>(可按 Enter 回复)</span>
         </div>
     </div>
@@ -23,10 +23,10 @@
     <div class="commentOn">
         <div class="noContent" v-show="msgData.length==0">暂无留言</div>
         <div class="messList">
-            <div class="reply" v-for="(item,index) in msgData" v-cloak>
+            <div class="reply" v-for="(index,item) in msgData">
                 <p class="replyContent">{{item.content}}</p>
                 <p class="operation">
-                    <span class="replyTime">{{item.time|date}}</span>
+                    <span class="replyTime">{{item.time|date_format}}</span>
                     <span class="handle">
                     	<a href="javascript:;" class="top" @click="top(index)">{{item.acc}}</a>
                         <a href="javascript:;" class="down_icon" @click="down(index)">{{item.ref}}</a>
@@ -36,9 +36,7 @@
             </div>
         </div>
         <div class="page">
-            <a href="javascript:;" class="active">1</a>
-            <a href="javascript:;">2</a>
-            <a href="javascript:;">3</a>
+            <a v-for="item in pageData" href="javascript:;" :class="{active: item==nowPage}" @click="this.nowPage=item">{{item}}</a>
         </div>
     </div>
 </div>

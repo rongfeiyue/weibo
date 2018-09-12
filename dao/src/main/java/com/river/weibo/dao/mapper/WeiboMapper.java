@@ -8,8 +8,6 @@ import java.util.List;
 public interface WeiboMapper {
     int deleteByPrimaryKey(Integer id);
 
-    int insert(Weibo record);
-
     int insertSelective(Weibo record);
 
     Weibo selectByPrimaryKey(Integer id);
@@ -19,4 +17,6 @@ public interface WeiboMapper {
     int updateByPrimaryKey(Weibo record);
 
     List<Weibo> list(PageInfoVO pageInfoVO);
+
+    Integer count();
 }

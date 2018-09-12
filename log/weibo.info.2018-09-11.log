@@ -1,0 +1,660 @@
+2018-09-11 10:04:44.475 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on 201803190022- with PID 15480 (E:\person\projects\vue\weibo\web\target\classes started by feiyuerong in E:\person\projects\vue\weibo)
+2018-09-11 10:04:44.480 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-11 10:04:44.481 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-11 10:04:45.286 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-11 10:04:46.215 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d898981: startup date [Tue Sep 11 10:04:46 CST 2018]; root of context hierarchy
+2018-09-11 10:04:49.450 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-11 10:04:49.471 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-11 10:04:49.473 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-11 10:04:49.726 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-11 10:04:49.726 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3511 ms
+2018-09-11 10:04:50.089 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-11 10:04:50.099 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-11 10:04:50.101 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-11 10:04:50.101 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-11 10:04:50.101 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-11 10:04:51.940 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d898981: startup date [Tue Sep 11 10:04:46 CST 2018]; root of context hierarchy
+2018-09-11 10:04:52.141 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-11 10:04:52.143 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-11 10:04:52.150 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-11 10:04:52.151 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-11 10:04:52.265 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:04:52.266 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:04:52.306 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-11 10:04:52.392 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:04:54.239 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-11 10:04:54.276 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-11 10:04:54.301 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-11 10:04:54.324 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-11 10:04:54.414 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-11 10:04:54.424 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 11.205 seconds (JVM running for 12.294)
+2018-09-11 10:05:23.924 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-11 10:05:23.924 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-11 10:05:23.969 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 45 ms
+2018-09-11 10:05:49.034 [http-nio-8088-exec-10] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-11 10:05:49.133 [http-nio-8088-exec-10] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-11 10:05:49.134 [http-nio-8088-exec-10] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-11 10:05:49.134 [http-nio-8088-exec-10] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-11 10:05:49.134 [http-nio-8088-exec-10] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-11 10:05:49.140 [http-nio-8088-exec-10] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-11 10:05:49.140 [http-nio-8088-exec-10] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-11 10:05:51.637 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:05:51.669 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:05:51.728 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:06:37.534 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-11 10:06:37.848 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on 201803190022- with PID 7436 (E:\person\projects\vue\weibo\web\target\classes started by feiyuerong in E:\person\projects\vue\weibo)
+2018-09-11 10:06:37.849 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-11 10:06:37.849 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-11 10:06:38.209 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63611043: startup date [Tue Sep 11 10:06:38 CST 2018]; root of context hierarchy
+2018-09-11 10:06:41.123 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-11 10:06:41.148 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-11 10:06:41.150 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-11 10:06:41.625 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-11 10:06:41.626 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3427 ms
+2018-09-11 10:06:41.892 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-11 10:06:41.899 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-11 10:06:41.900 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-11 10:06:41.900 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-11 10:06:41.900 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-11 10:06:43.474 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63611043: startup date [Tue Sep 11 10:06:38 CST 2018]; root of context hierarchy
+2018-09-11 10:06:43.656 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-11 10:06:43.658 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-11 10:06:43.661 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-11 10:06:43.662 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-11 10:06:43.746 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:06:43.747 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:06:43.785 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-11 10:06:43.861 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:06:45.413 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-11 10:06:45.446 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-11 10:06:45.470 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-11 10:06:45.496 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-11 10:06:45.533 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-11 10:06:45.540 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 9.654 seconds (JVM running for 10.958)
+2018-09-11 10:07:08.601 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-11 10:07:08.601 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-11 10:07:08.657 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 55 ms
+2018-09-11 10:07:08.750 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-11 10:07:08.855 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-11 10:07:08.856 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-11 10:07:08.856 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-11 10:07:08.856 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-11 10:07:08.869 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-11 10:07:08.870 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-11 10:07:11.172 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:07:11.218 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:07:11.272 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:07:57.003 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on 201803190022- with PID 13684 (E:\person\projects\vue\weibo\web\target\classes started by feiyuerong in E:\person\projects\vue\weibo)
+2018-09-11 10:07:57.010 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-11 10:07:57.011 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-11 10:07:57.854 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73302995: startup date [Tue Sep 11 10:07:57 CST 2018]; root of context hierarchy
+2018-09-11 10:07:58.186 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-11 10:08:00.935 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-11 10:08:00.951 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-11 10:08:00.953 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-11 10:08:01.208 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-11 10:08:01.208 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3354 ms
+2018-09-11 10:08:01.876 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-11 10:08:01.884 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-11 10:08:01.885 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-11 10:08:01.885 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-11 10:08:01.886 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-11 10:08:03.440 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73302995: startup date [Tue Sep 11 10:07:57 CST 2018]; root of context hierarchy
+2018-09-11 10:08:03.586 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-11 10:08:03.588 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-11 10:08:03.591 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-11 10:08:03.592 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-11 10:08:03.670 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:08:03.671 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:08:03.706 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-11 10:08:03.763 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:08:05.218 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-11 10:08:05.247 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-11 10:08:05.275 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-11 10:08:05.297 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-11 10:08:05.341 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-11 10:08:05.349 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 10.0 seconds (JVM running for 11.117)
+2018-09-11 10:08:09.301 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-11 10:08:09.302 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-11 10:08:09.335 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-09-11 10:08:09.393 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-11 10:08:09.458 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-11 10:08:09.459 [http-nio-8088-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-11 10:08:09.459 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-11 10:08:09.459 [http-nio-8088-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-11 10:08:09.465 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-11 10:08:09.466 [http-nio-8088-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-11 10:08:11.279 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:08:11.316 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:08:11.367 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:09:04.129 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on 201803190022- with PID 8880 (E:\person\projects\vue\weibo\web\target\classes started by feiyuerong in E:\person\projects\vue\weibo)
+2018-09-11 10:09:04.136 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-11 10:09:04.137 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-11 10:09:04.947 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-11 10:09:05.004 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@341814d3: startup date [Tue Sep 11 10:09:05 CST 2018]; root of context hierarchy
+2018-09-11 10:09:09.746 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-11 10:09:09.767 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-11 10:09:09.769 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-11 10:09:10.028 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-11 10:09:10.029 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5025 ms
+2018-09-11 10:09:10.697 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-11 10:09:10.710 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-11 10:09:10.712 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-11 10:09:10.712 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-11 10:09:10.712 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-11 10:09:12.425 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@341814d3: startup date [Tue Sep 11 10:09:05 CST 2018]; root of context hierarchy
+2018-09-11 10:09:12.603 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-11 10:09:12.605 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-11 10:09:12.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-11 10:09:12.610 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-11 10:09:12.698 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:09:12.699 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:09:12.739 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-11 10:09:12.792 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:09:14.318 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-11 10:09:14.355 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-11 10:09:14.385 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-11 10:09:14.408 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-11 10:09:14.451 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-11 10:09:14.460 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 11.878 seconds (JVM running for 12.866)
+2018-09-11 10:09:18.077 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-11 10:09:18.077 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-11 10:09:18.109 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2018-09-11 10:09:18.169 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-09-11 10:09:18.246 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-09-11 10:09:18.246 [http-nio-8088-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-09-11 10:09:18.247 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-09-11 10:09:18.247 [http-nio-8088-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-09-11 10:09:18.253 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-09-11 10:09:18.255 [http-nio-8088-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-09-11 10:09:19.531 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:09:19.573 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:09:19.662 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:17:34.752 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:17:34.757 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:17:34.760 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:17:49.496 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:17:49.497 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:17:49.503 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:17:50.286 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:17:50.291 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:17:50.293 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:17:50.565 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:17:50.566 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:17:50.568 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:17:50.798 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:17:50.799 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:17:50.801 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:17:51.439 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:17:51.440 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:17:51.443 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:17:51.655 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:17:51.657 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:17:51.660 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:17:51.862 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:17:51.862 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:17:51.863 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:17:52.074 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:17:52.075 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:17:52.076 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:17:52.281 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:17:52.281 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:17:52.292 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:18:22.288 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:18:22.289 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:18:22.291 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:20:25.168 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on 201803190022- with PID 12400 (E:\person\projects\vue\weibo\web\target\classes started by feiyuerong in E:\person\projects\vue\weibo)
+2018-09-11 10:20:25.176 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-11 10:20:25.179 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-11 10:20:25.641 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-11 10:20:26.569 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@291f18: startup date [Tue Sep 11 10:20:26 CST 2018]; root of context hierarchy
+2018-09-11 10:20:29.471 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-11 10:20:29.492 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-11 10:20:29.494 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-11 10:20:29.895 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-11 10:20:29.895 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3326 ms
+2018-09-11 10:20:30.204 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-11 10:20:30.212 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-11 10:20:30.213 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-11 10:20:30.213 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-11 10:20:30.213 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-11 10:20:31.852 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@291f18: startup date [Tue Sep 11 10:20:26 CST 2018]; root of context hierarchy
+2018-09-11 10:20:32.088 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-11 10:20:32.091 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-11 10:20:32.094 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-11 10:20:32.095 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-11 10:20:32.179 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:20:32.180 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:20:32.221 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-11 10:20:32.285 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:20:34.491 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-11 10:20:34.550 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-11 10:20:34.576 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-11 10:20:34.602 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-11 10:20:34.731 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-11 10:20:34.739 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 11.453 seconds (JVM running for 13.02)
+2018-09-11 10:20:46.422 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-11 10:20:46.423 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-11 10:20:46.457 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2018-09-11 10:20:47.579 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:20:47.619 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:20:47.641 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:21:09.262 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:21:09.263 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:21:09.266 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:22:57.400 [main] INFO  com.river.weibo.WebApplication - Starting WebApplication on 201803190022- with PID 8752 (E:\person\projects\vue\weibo\web\target\classes started by feiyuerong in E:\person\projects\vue\weibo)
+2018-09-11 10:22:57.406 [main] DEBUG com.river.weibo.WebApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2018-09-11 10:22:57.406 [main] INFO  com.river.weibo.WebApplication - No active profile set, falling back to default profiles: default
+2018-09-11 10:22:58.507 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d778add: startup date [Tue Sep 11 10:22:58 CST 2018]; root of context hierarchy
+2018-09-11 10:23:00.181 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-09-11 10:23:01.686 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+2018-09-11 10:23:01.708 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-11 10:23:01.710 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-09-11 10:23:02.198 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-11 10:23:02.198 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3691 ms
+2018-09-11 10:23:02.502 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-11 10:23:02.509 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-11 10:23:02.510 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-11 10:23:02.510 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-11 10:23:02.510 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-11 10:23:04.130 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d778add: startup date [Tue Sep 11 10:22:58 CST 2018]; root of context hierarchy
+2018-09-11 10:23:06.097 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/getList],methods=[GET]}" onto public com.river.weibo.common.vo.ResponseVO com.river.weibo.controller.WeiboController.getList(com.river.weibo.common.vo.PageInfoVO)
+2018-09-11 10:23:06.098 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weibo/index],methods=[GET]}" onto public java.lang.String com.river.weibo.controller.WeiboController.weibo()
+2018-09-11 10:23:06.107 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-11 10:23:06.109 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-11 10:23:06.200 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:23:06.200 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:23:06.240 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-09-11 10:23:06.309 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-11 10:23:07.636 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-11 10:23:07.680 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2018-09-11 10:23:07.745 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2018-09-11 10:23:07.775 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-09-11 10:23:07.823 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+2018-09-11 10:23:07.831 [main] INFO  com.river.weibo.WebApplication - Started WebApplication in 11.375 seconds (JVM running for 12.4)
+2018-09-11 10:23:28.297 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-11 10:23:28.297 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-11 10:23:28.327 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2018-09-11 10:23:37.835 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:23:37.868 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:23:37.883 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:24:40.543 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:24:40.545 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:24:40.549 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:25:08.015 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:25:08.015 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:25:08.019 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:25:30.117 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:25:30.120 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:25:30.124 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:25:31.267 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:25:31.268 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:25:31.270 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:25:32.682 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:25:32.682 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:25:32.688 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:25:33.125 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:25:33.126 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:25:33.127 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:25:33.410 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:25:33.412 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:25:33.418 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:25:33.648 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:25:33.649 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:25:33.653 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:25:33.841 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:25:33.841 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:25:33.843 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:25:34.062 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:25:34.062 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:25:34.063 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:25:34.278 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:25:34.278 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:25:34.284 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:25:47.245 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:25:47.248 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:25:47.253 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:26:09.619 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:26:09.619 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:26:09.620 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:26:10.353 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:26:10.354 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:26:10.355 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:26:11.282 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:26:11.287 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:26:11.301 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:26:11.570 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:26:11.571 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:26:11.577 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:26:11.843 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:26:11.844 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:26:11.845 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:26:29.072 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:26:29.073 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:26:29.077 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:26:29.886 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:26:29.886 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:26:29.887 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:26:38.948 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:26:38.950 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:26:38.952 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:27:37.115 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:27:37.116 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:27:37.118 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:28:03.290 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:28:03.291 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:28:03.292 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:28:05.345 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:28:05.346 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:28:05.350 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:28:05.926 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:28:05.928 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:28:05.929 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:28:06.253 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:28:06.253 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:28:06.254 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:28:06.472 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:28:06.473 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:28:06.474 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:28:06.690 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:28:06.692 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:28:06.701 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:28:06.912 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:28:06.912 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:28:06.918 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:28:07.106 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:28:07.106 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:28:07.108 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:28:20.447 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:28:20.452 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:28:20.453 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:28:21.490 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:28:21.491 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:28:21.492 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:28:21.756 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:28:21.757 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:28:21.758 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:28:21.988 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:28:21.989 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:28:21.993 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:28:22.272 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:28:22.273 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:28:22.274 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:29:50.181 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:29:50.182 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:29:50.183 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:30:09.858 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:30:09.859 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:30:09.860 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:30:10.182 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:30:10.183 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:30:10.184 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:32:25.271 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:32:25.272 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:32:25.275 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:33:14.547 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:33:14.547 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:33:14.550 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:33:14.979 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:33:14.979 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:33:14.981 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:33:15.262 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:33:15.262 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:33:15.263 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:33:15.497 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:33:15.498 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:33:15.500 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:33:15.730 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:33:15.731 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:33:15.734 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:33:15.947 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:33:15.947 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:33:15.948 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:33:16.181 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:33:16.181 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:33:16.183 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:33:16.410 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:33:16.412 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:33:16.413 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:35:27.247 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:35:27.249 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:35:27.250 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:35:28.229 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:35:28.231 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:35:28.232 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:35:28.848 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:35:28.848 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:35:28.850 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:35:29.816 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:35:29.817 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:35:29.818 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:35:30.234 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:35:30.234 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:35:30.236 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:35:30.513 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:35:30.514 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:35:30.515 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:35:30.732 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:35:30.733 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:35:30.734 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:35:30.943 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:35:30.943 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:35:30.944 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:35:31.147 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:35:31.148 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:35:31.149 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 1
+2018-09-11 10:35:58.505 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:35:58.505 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:35:58.506 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:36:49.041 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:36:49.041 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:36:49.042 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:37:22.474 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:37:22.474 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:37:22.479 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:37:30.481 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:37:30.482 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:37:30.489 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:38:10.962 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:38:10.963 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:38:10.965 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:38:52.211 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:38:52.212 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:38:52.214 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:40:17.240 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:40:17.240 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:40:17.242 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:40:34.814 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:40:34.815 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:40:34.817 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:40:51.068 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:40:51.068 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:40:51.071 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:40:51.883 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:40:51.884 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:40:51.886 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:40:52.172 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:40:52.173 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:40:52.174 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:40:52.460 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:40:52.461 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:40:52.463 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:40:52.766 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:40:52.768 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:40:52.773 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:37.768 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:37.769 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:37.772 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:38.951 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:38.952 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:38.953 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:39.536 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:39.536 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:39.538 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:39.787 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:39.787 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:39.791 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:40.006 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:40.006 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:40.008 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:51.121 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:51.123 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:51.125 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:52.022 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:52.023 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:52.026 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:52.566 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:52.566 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:52.575 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:52.928 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:52.928 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:52.929 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:53.220 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:53.220 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:53.222 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:53.492 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:53.492 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:53.495 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:53.732 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:53.732 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:53.733 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:53.965 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:53.966 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:53.967 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:54.242 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:54.243 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:54.247 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:54.537 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:54.538 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:54.539 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:54.810 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:54.810 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:54.812 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:55.077 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:55.078 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:55.084 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:55.634 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:55.635 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:55.636 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:55.916 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:55.916 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:55.917 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:56.132 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:56.132 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:56.133 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:56.329 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:56.331 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:56.333 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:42:56.550 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:42:56.550 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:42:56.580 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:43:11.659 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:43:11.659 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:43:11.661 [http-nio-8088-exec-2] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:44:01.398 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:44:01.399 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:44:01.403 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:44:02.047 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:44:02.048 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:44:02.049 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:44:02.325 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:44:02.326 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:44:02.329 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:44:02.571 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:44:02.572 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:44:02.573 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:44:02.781 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:44:02.781 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:44:02.783 [http-nio-8088-exec-4] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:44:03.022 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:44:03.023 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:44:03.024 [http-nio-8088-exec-8] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:44:03.287 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:44:03.288 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:44:03.289 [http-nio-8088-exec-10] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:44:03.506 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:44:03.507 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:44:03.508 [http-nio-8088-exec-1] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:44:14.010 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:44:14.011 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:44:14.014 [http-nio-8088-exec-6] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:44:14.659 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:44:14.659 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:44:14.661 [http-nio-8088-exec-5] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:44:14.917 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:44:14.920 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:44:14.924 [http-nio-8088-exec-3] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:44:15.432 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:44:15.433 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:44:15.437 [http-nio-8088-exec-7] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
+2018-09-11 10:44:15.809 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==>  Preparing: select id, content, acc, ref, time, deleted FROM t_weibo ORDER BY id desc limit ?,? 
+2018-09-11 10:44:15.809 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - ==> Parameters: 0(Integer), 10(Integer)
+2018-09-11 10:44:15.811 [http-nio-8088-exec-9] DEBUG com.river.weibo.dao.mapper.WeiboMapper.list - <==      Total: 2
