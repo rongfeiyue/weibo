@@ -1,10 +1,13 @@
 $(function () {
     Vue.filter('date_format', function (input) {
         var oDate = new Date(input);
-        return oDate.getFullYear() + '-' + (oDate.getMonth() + 1) + '-' + oDate.getDate() + ' ' + oDate.getHours() + ':' + oDate.getMinutes() + ':' + oDate.getSeconds();
-    })
-    // var url_prefix = 'http://localhost:8088';
-    var url_prefix = '';
+        return oDate.getFullYear() + '-' + suppleZero((oDate.getMonth() + 1)) + '-' + suppleZero(oDate.getDate()) + ' ' + suppleZero(oDate.getHours()) + ':' + suppleZero(oDate.getMinutes()) + ':' + suppleZero(oDate.getSeconds());
+    });
+    function suppleZero(input) {
+        return input<10?'0'+input:input;
+    }
+    // var url_prefix = 'http://localhost:8088/weibo';
+    var url_prefix = '/weibo';
     new Vue({
         el: '.znsArea',
         data: {
@@ -30,7 +33,7 @@ $(function () {
         methods: {
             add: function () {
                 if ('' == this.content) return false;
-                this.$http.post(url_prefix + '/weibo/add', {content: this.content}, {
+                this.$http.post(url_prefix + '/add', {content: this.content}, {
                     emulateJSON: true
                 }).then(function (res) {
                     if (res.data.code = 200) {
@@ -43,7 +46,7 @@ $(function () {
             },
             top: function (index) {
                 let data = this.msgData[index];
-                this.$http.post(url_prefix + '/weibo/operate/top/' + data.id).then(function (res) {
+                this.$http.post(url_prefix + '/operate/top/' + data.id).then(function (res) {
                     if (res.data.code = 200) {
                         this.msgData[index].acc++;
                     } else {
@@ -53,7 +56,7 @@ $(function () {
             },
             down: function (index) {
                 let data = this.msgData[index];
-                this.$http.post(url_prefix + '/weibo/operate/down/' + data.id).then(function (res) {
+                this.$http.post(url_prefix + '/operate/down/' + data.id).then(function (res) {
                     if (res.data.code = 200) {
                         this.msgData[index].ref++;
                     } else {
@@ -64,7 +67,7 @@ $(function () {
             del: function (index) {
                 let data = this.msgData[index];
                 this.$http.options.emulateJSON = true;
-                this.$http.post(url_prefix + '/weibo/operate/delete/' + data.id).then(function (res) {
+                this.$http.post(url_prefix + '/operate/delete/' + data.id).then(function (res) {
                     if (res.ok && res.data.code === 200) {
                         this.getList();
                     } else {
@@ -73,7 +76,7 @@ $(function () {
                 })
             },
             getList: function () {
-                this.$http.get(url_prefix + '/weibo/getList', {
+                this.$http.get(url_prefix + '/getList', {
                     page: this.nowPage,
                     rows: this.rows
                 }).then(function (res) {

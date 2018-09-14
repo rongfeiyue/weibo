@@ -38,7 +38,26 @@
         </dependency>
     </dependencies>
 
+    <profiles>
+        <profile>
+            <id>home</id>
+            <properties>
+                <profiles.active>home</profiles.active>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>company</id>
+            <properties>
+                <profiles.active>company</profiles.active>
+            </properties>
+        </profile>
+    </profiles>
+
     <build>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -63,10 +82,13 @@
                 <directory>src/main/java</directory>
             </resource>
             <resource>
-                <directory>src/main/resources</directory>
+                <directory>src/main/resources/${profiles.active}</directory>
             </resource>
             <resource>
-                <directory>src/main/static</directory>
+                <directory>src/main/resources/common</directory>
+            </resource>
+            <resource>
+                <directory>src/main/resources/static</directory>
             </resource>
         </resources>
     </build>
